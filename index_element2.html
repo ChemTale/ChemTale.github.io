@@ -87,15 +87,6 @@
         </div> <!-- END container -->
   
         <script>
-          function formatChemicalFormulas() {
-          var elements = document.querySelectorAll('span[id^="element_cp"]');
-          elements.forEach(function(element) {
-            var formula = element.textContent;
-            var formattedFormula = formula.replace(/(\d+)/g, '<sub>$1</sub>');
-            element.innerHTML = formattedFormula;
-          });
-        }
-
           var elements = [
           {
             name: "Hydrogen",
@@ -153,9 +144,9 @@
             story: "In 1868, Pierre J. C. Janssen travelled to India to measure the solar spectrum during a total eclipse and observed a new yellow line which indicated a new element. Joseph Norman Lockyer recorded the same line by observing the sun through London smog and, assuming the new element to be a metal, he named it helium. In 1882, the Italian Luigi Palmieri found the same line the spectrum of gases emitted by Vesuvius, as did the American William Hillebrand in 1889 when he collected the gas given off by the mineral uraninite (UO2) as it dissolves in acid. However, it was Per Teodor Cleve and Nils Abraham Langer at Uppsala, Sweden, in 1895, who repeated that experiment and confirmed it was helium and measured its atomic weight.",
             country: "UK",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480904080/elements/helium.jpg",
-            formulas: "['He', 'HeO2', 'HeN4']",
-            formulas_cid: "[23987, 'Failed to retrieve data', 94697]",
-            formula_links: "['\"\"', '\"\"', '\"\"']"
+            formulas: "['/watch?v=AW8OOp2undg', '/watch?v=AW8OOp2undg', '/watch?v=AW8OOp2undg']",
+            formulas_cid: "[, , ]",
+            formula_links: "[]"
           },
           {
             name: "Lithium",
@@ -185,7 +176,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480904156/elements/lithium.jpg",
             formulas: "['Li2O', 'Li3N', 'Li2CO3']",
             formulas_cid: "[82891, 520242, 11125]",
-            formula_links: "['\"\"', '/watch?v=WSN90VK0rNQ&pp=ygUSaG93IHRvIGNyZWF0ZSBMaTNO', '/watch?v=4fHqyEKq5AU&pp=ygUUaG93IHRvIGNyZWF0ZSBMaTJDTzM%3D']"
+            formula_links: "['/watch?v=AW8OOp2undg', '/4-JnzV2MhBM', '/ASPf_eKHpCE']"
           },
           {
             name: "Beryllium",
@@ -214,8 +205,8 @@
             country: "France",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480904174/elements/beryllium.jpg",
             formulas: "['BeH2', 'BeCl2', 'BeO']",
-            formulas_cid: "[139073, 24588, 24701]",
-            formula_links: "['/watch?v=Lhnpk-ZPP4Q&pp=ygUSaG93IHRvIGNyZWF0ZSBCZUgy', '/watch?v=QyJmpyJ0EHc&pp=ygUTaG93IHRvIGNyZWF0ZSBCZUNsMg%3D%3D', '\"\"']"
+            formulas_cid: "[139073, 24588, 14775]",
+            formula_links: "['/watch?v=AW8OOp2undg', '/watch?v=AW8OOp2undg', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Boron",
@@ -244,7 +235,7 @@
             country: "France",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480904199/elements/boron.jpg",
             formulas: "['B2H6', 'BF3', 'B2O3']",
-            formulas_cid: "[6328204, 6356, 518682]",
+            formulas_cid: "[12544637, 6356, 518682]",
             formula_links: "['/watch?v=3u9VzoOxPeU&pp=ygUSaG93IHRvIGNyZWF0ZSBCMkg2', ' ', '/watch?v=YpBNd0owlt0&pp=ygUSaG93IHRvIGNyZWF0ZSBCMk8z']"
           },
           {
@@ -275,7 +266,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480904226/elements/carbon.jpg",
             formulas: "['CH4', 'C6H12O6', 'CO2']",
             formulas_cid: "[297, 185698, 280]",
-            formula_links: "['/watch?v=VdNPkW9I0fQ&pp=ygURaG93IHRvIGNyZWF0ZSBDSDQ%3D', '/ws28wsVOqJc&pp=ygUVaG93IHRvIGNyZWF0ZSBDNkgxMk82', '/watch?v=2cWa5ENWxAg&pp=ygURaG93IHRvIGNyZWF0ZSBDTzI%3D']"
+            formula_links: "['/watch?v=VdNPkW9I0fQ&pp=ygURaG93IHRvIGNyZWF0ZSBDSDQ%3D', '/watch?v=AW8OOp2undg', '/watch?v=2cWa5ENWxAg&pp=ygURaG93IHRvIGNyZWF0ZSBDTzI%3D']"
           },
           {
             name: "Nitrogen",
@@ -305,7 +296,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480904240/elements/nitrogen.jpg",
             formulas: "['NH3', 'N2', 'NO3-']",
             formulas_cid: "[222, 947, 943]",
-            formula_links: "['/watch?v=9P1iZBV-EKw&pp=ygURaG93IHRvIGNyZWF0ZSBOSDM%3D', '/watch?v=MgDc-GQ6Sz8&pp=ygUQaG93IHRvIGNyZWF0ZSBOMg%3D%3D', '\"\"']"
+            formula_links: "['/watch?v=9P1iZBV-EKw&pp=ygURaG93IHRvIGNyZWF0ZSBOSDM%3D', '/watch?v=MgDc-GQ6Sz8&pp=ygUQaG93IHRvIGNyZWF0ZSBOMg%3D%3D', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Oxygen",
@@ -365,7 +356,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480904323/elements/fluorite.jpg",
             formulas: "['F2', 'HF', 'NaF']",
             formulas_cid: "[24524, 23986, 5235]",
-            formula_links: "['\"\"', '\"\"', '/watch?v=dlj6l_MC6WE&pp=ygURaG93IHRvIGNyZWF0ZSBOYUY%3D']"
+            formula_links: "['/watch?v=AW8OOp2undg', '/watch?v=cLpSapjKcxM', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Neon",
@@ -424,7 +415,7 @@
             country: "UK",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480904377/elements/sodium.jpg",
             formulas: "['NaCl', 'NaOH', 'Na2CO3']",
-            formulas_cid: "[]",
+            formulas_cid: "[5234, 14798, 10340]",
             formula_links: "['/watch?v=d2geiGKFveE&pp=ygUSaG93IHRvIGNyZWF0ZSBOYUNs', '/watch?v=Yl2F43erT5w&pp=ygUSaG93IHRvIGNyZWF0ZSBOYU9I', '/watch?v=t_w_7Uv1CCo&pp=ygUUaG93IHRvIGNyZWF0ZSBOYTJDTzM%3D']"
           },
           {
@@ -514,8 +505,8 @@
             country: "Sweden",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480904424/elements/silicon.jpg",
             formulas: "['SiO2', 'SiC', 'SiH4']",
-            formulas_cid: "[24261, 9947618, 23953]",
-            formula_links: "['/watch?v=y-fdunvzC_g&pp=ygUSaG93IHRvIGNyZWF0ZSBTaU8y', '\"\"', '/watch?v=VvENU6eSl2A&pp=ygUSaG93IHRvIGNyZWF0ZSBTaUg0']"
+            formulas_cid: "[24261, 521017, 23953]",
+            formula_links: "['/watch?v=y-fdunvzC_g&pp=ygUSaG93IHRvIGNyZWF0ZSBTaU8y', '/watch?v=HeSXVKLj8kg', '/watch?v=VvENU6eSl2A&pp=ygUSaG93IHRvIGNyZWF0ZSBTaUg0']"
           },
           {
             name: "Phosphorus",
@@ -545,7 +536,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480904442/elements/phosphorus.jpg",
             formulas: "['H3PO4', 'P4O10', 'P2O5']",
             formulas_cid: "[1004, 14812, 14812]",
-            formula_links: "['/watch?v=G3AkRTEMl9M&pp=ygUTaG93IHRvIGNyZWF0ZSBIM1BPNA%3D%3D', '/watch?v=4dzPpCB1d_A&pp=ygUTaG93IHRvIGNyZWF0ZSBQNE8xMA%3D%3D', '/Y1vBorbbX38&pp=ygUSaG93IHRvIGNyZWF0ZSBQMk81']"
+            formula_links: "['/watch?v=G3AkRTEMl9M&pp=ygUTaG93IHRvIGNyZWF0ZSBIM1BPNA%3D%3D', '/watch?v=AW8OOp2undg', '/Y1vBorbbX38&pp=ygUSaG93IHRvIGNyZWF0ZSBQMk81']"
           },
           {
             name: "Sulfur",
@@ -573,9 +564,9 @@
             story: "Sulfur is mentioned 15 times in the Bible, and was best known for destroying Sodom and Gomorrah. It was also known to the ancient Greeks, and burnt as a fumigant. Sulfur was mined near Mount Etna in Sicily and used for bleaching cloth and preserving wine, both of which involved burning it to form sulfur dioxide, and allowing this to be absorbed by wet clothes or the grape juice. For centuries, sulfur along with mercury and salt, was believed to be a component of all metals and formed the basis of alchemy whereby one metal could be transmuted into another. Antoine Lavoisier thought that sulfur was an element, but in 1808 Humphry Davy said it contained hydrogen. However, his sample was impure and when Louis-Josef Gay-Lussac and Louis-Jacques Thénard proved it to be an element the following year, Davy eventually agreed.",
             country: "ancient",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480904452/elements/sulfur.jpg",
-            formulas: "['H2SO4', 'SO2', 'SO3']",
-            formulas_cid: "[1118, 1119, 24437]",
-            formula_links: "['/watch?v=s67yDuPfI8E&pp=ygUTaG93IHRvIGNyZWF0ZSBIMlNPNA%3D%3D', '/watch?v=oPl8QuBgc4s&pp=ygURaG93IHRvIGNyZWF0ZSBTTzI%3D', '/watch?v=g9U925SYRfY&pp=ygURaG93IHRvIGNyZWF0ZSBTTzM%3D']"
+            formulas: "['H2SO4', 'SO2', 'H2SO3']",
+            formulas_cid: "[1118, 1119, 1100]",
+            formula_links: "['/watch?v=s67yDuPfI8E&pp=ygUTaG93IHRvIGNyZWF0ZSBIMlNPNA%3D%3D', '/watch?v=oPl8QuBgc4s&pp=ygURaG93IHRvIGNyZWF0ZSBTTzI%3D', '/watch?v=-MvEn-GSsAg']"
           },
           {
             name: "Chlorine",
@@ -633,9 +624,9 @@
             story: "Although argon is abundant in the Earth’s atmosphere, it evaded discovery until 1894 when Lord Rayleigh and William Ramsay first separated it from liquid air. In fact the gas had been isolated in 1785 by Henry Cavendish who had noted that about 1% of air would not react even under the most extreme conditions. That 1% was argon. Argon was discovered as a result of trying to explain why the density of nitrogen extracted from air differed from that obtained by the decomposition of ammonia. Ramsay removed all the nitrogen from the gas he had extracted from air, and did this by reacting it with hot magnesium, forming the solid magnesium nitride. He was then left with a gas that would not react and when he examined its spectrum he saw new groups of red and green lines, confirming that it was a new element.",
             country: "UK",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480904473/elements/argon.jpg",
-            formulas: "['Ar']",
-            formulas_cid: "[23968]",
-            formula_links: "['\"\"']"
+            formulas: "['/watch?v=AW8OOp2undg']",
+            formulas_cid: "[,,]",
+            formula_links: "[]"
           },
           {
             name: "Potassium",
@@ -695,7 +686,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480904501/elements/calcium.jpg",
             formulas: "['CaCO3', 'CaO', 'Ca(OH)2']",
             formulas_cid: "[10112, 14778, 6093208]",
-            formula_links: "['/watch?v=rJMuEWQ9RI4&pp=ygUTaG93IHRvIGNyZWF0ZSBDYUNPMw%3D%3D', '\"\"', '/Cyfcxf_2C8I&pp=ygUVaG93IHRvIGNyZWF0ZSBDYShPSCky']"
+            formula_links: "['/watch?v=rJMuEWQ9RI4&pp=ygUTaG93IHRvIGNyZWF0ZSBDYUNPMw%3D%3D', '/watch?v=uHzfq7woQw8', '/Cyfcxf_2C8I&pp=ygUVaG93IHRvIGNyZWF0ZSBDYShPSCky']"
           },
           {
             name: "Scandium",
@@ -724,7 +715,7 @@
             country: "Sweden",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480904513/elements/scandium.jpg",
             formulas: "['Sc2O3', 'ScCl3', 'ScF3']",
-            formulas_cid: "[134661, 5460769, 83678]",
+            formulas_cid: "[134661, 10176216, 83678]",
             formula_links: "['/watch?v=ArZzJ121Z0g&pp=ygUTaG93IHRvIGNyZWF0ZSBTYzJPMw%3D%3D', '/watch?v=ZD4eqh8cLqs&pp=ygUTaG93IHRvIGNyZWF0ZSBTY0NsMw%3D%3D', '/watch?v=papWV1HTsWQ']"
           },
           {
@@ -754,8 +745,8 @@
             country: "UK",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480904523/elements/titanium-crystal.jpg",
             formulas: "['TiO2', 'TiCl4', 'TiO']",
-            formulas_cid: "[26042, 24193, 23963]",
-            formula_links: "['/watch?v=XIjDw5Sw9c4&pp=ygUSaG93IHRvIGNyZWF0ZSBUaU8y', '/watch?v=bR_LAr_mOCw&pp=ygUTaG93IHRvIGNyZWF0ZSBUaUNsNA%3D%3D', '/watch?v=6PIPXIyL_ms&pp=ygURaG93IHRvIGNyZWF0ZSBUaU8%3D']"
+            formulas_cid: "[26042, 24193, 61685]",
+            formula_links: "['/watch?v=XIjDw5Sw9c4&pp=ygUSaG93IHRvIGNyZWF0ZSBUaU8y', '/watch?v=bR_LAr_mOCw&pp=ygUTaG93IHRvIGNyZWF0ZSBUaUNsNA%3D%3D', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Vanadium",
@@ -784,8 +775,8 @@
             country: "Sweden",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480904532/elements/vanadium.jpg",
             formulas: "['V2O5', 'VO2', 'V2O3']",
-            formulas_cid: "[14814, 23990, 14805]",
-            formula_links: "['/watch?v=0vVIj9CSAXM&pp=ygUSaG93IHRvIGNyZWF0ZSBWMk81', '', '/watch?v=MoHW_vh49RI&pp=ygUSaG93IHRvIGNyZWF0ZSBWMk8z']"
+            formulas_cid: "[14814, 82849, 14805]",
+            formula_links: "['/watch?v=0vVIj9CSAXM&pp=ygUSaG93IHRvIGNyZWF0ZSBWMk81', '/watch?v=AW8OOp2undg', '/watch?v=MoHW_vh49RI&pp=ygUSaG93IHRvIGNyZWF0ZSBWMk8z']"
           },
           {
             name: "Chromium",
@@ -845,7 +836,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480904903/elements/manganese.jpg",
             formulas: "['MnO2', 'KMnO4', 'Mn2O3']",
             formulas_cid: "[14801, 516875, 14941]",
-            formula_links: "['/watch?v=slKnjaWy-e4&pp=ygUSaG93IHRvIGNyZWF0ZSBNbk8y', '/watch?v=sEzzLAe4ycI&pp=ygUTaG93IHRvIGNyZWF0ZSBLTW5PNA%3D%3D', '\"\"']"
+            formula_links: "['/watch?v=slKnjaWy-e4&pp=ygUSaG93IHRvIGNyZWF0ZSBNbk8y', '/watch?v=sEzzLAe4ycI&pp=ygUTaG93IHRvIGNyZWF0ZSBLTW5PNA%3D%3D', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Iron",
@@ -874,8 +865,8 @@
             country: "ancient",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480904965/elements/iron-3.jpg",
             formulas: "['FeO', 'Fe2O3', 'Fe3O4']",
-            formulas_cid: "[14942, 518696, 16211978]",
-            formula_links: "['/watch?v=d3qNUiGDOwg&pp=ygURaG93IHRvIGNyZWF0ZSBGZU8%3D', '/watch?v=E1XUgIyswlA&pp=ygUTaG93IHRvIGNyZWF0ZSBGZTJPMw%3D%3D', '/watch?v=bPzY2HL9_VE&pp=ygUTaG93IHRvIGNyZWF0ZSBGZTNPNA%3D%3D']"
+            formulas_cid: "[14945, 518696, 16211978]",
+            formula_links: "['/watch?v=AW8OOp2undg', '/watch?v=E1XUgIyswlA&pp=ygUTaG93IHRvIGNyZWF0ZSBGZTJPMw%3D%3D', '/watch?v=bPzY2HL9_VE&pp=ygUTaG93IHRvIGNyZWF0ZSBGZTNPNA%3D%3D']"
           },
           {
             name: "Cobalt",
@@ -904,8 +895,8 @@
             country: "Sweden",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905019/elements/cobalt.jpg",
             formulas: "['Co', 'Co2O3', 'CoCl2']",
-            formulas_cid: "[104730, 4110762, 'Failed to retrieve data']",
-            formula_links: "['\"\"', '/watch?v=MQ9DqLtm2XA&pp=ygUTaG93IHRvIGNyZWF0ZSBDbzJPMw%3D%3D', '/watch?v=isl1kqMPZC8&pp=ygUTaG93IHRvIGNyZWF0ZSBDb0NsMg%3D%3D']"
+            formulas_cid: "[104730, 4110762, '3032536']",
+            formula_links: "['/watch?v=AW8OOp2undg', '/watch?v=MQ9DqLtm2XA&pp=ygUTaG93IHRvIGNyZWF0ZSBDbzJPMw%3D%3D', '/watch?v=JeqjPcAWB9A']"
           },
           {
             name: "Nickel",
@@ -934,8 +925,8 @@
             country: "Sweden",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905028/elements/nickel.jpg",
             formulas: "['NiO', 'NiCl2', 'NiSO4']",
-            formulas_cid: "[938, 24385, 24586]",
-            formula_links: "[\"''\", '/watch?v=990OfUkmNL0&pp=ygUTaG93IHRvIGNyZWF0ZSBOaUNsMg%3D%3D', '/watch?v=37rZeiLFMFk&pp=ygUTaG93IHRvIGNyZWF0ZSBOaVNPNA%3D%3D']"
+            formulas_cid: "[14805, 24385, 24586]",
+            formula_links: "['/watch?v=hNiCDI9nnSU', '/watch?v=GUxen09r5C0', '/watch?v=37rZeiLFMFk&pp=ygUTaG93IHRvIGNyZWF0ZSBOaVNPNA%3D%3D']"
           },
           {
             name: "Copper",
@@ -994,7 +985,7 @@
             country: "Germany",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905048/elements/zinc.jpg",
             formulas: "['ZnO', 'ZnS', 'ZnCl2']",
-            formulas_cid: "[14806, 54104351, 24408]",
+            formulas_cid: "[3007857, 14821, 5727]",
             formula_links: "['/watch?v=hR5Zbbbawv4&pp=ygURaG93IHRvIGNyZWF0ZSBabk8%3D', '/watch?v=2kvYD2bkmHk&pp=ygURaG93IHRvIGNyZWF0ZSBablM%3D', '/watch?v=yfrAMyTV-xY&pp=ygUTaG93IHRvIGNyZWF0ZSBabkNsMg%3D%3D']"
           },
           {
@@ -1025,7 +1016,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905066/elements/gallium.jpg",
             formulas: "['Cl2Ga', 'Ga2O3', 'GaAs']",
             formulas_cid: "[6332932, 5139834, 14770]",
-            formula_links: "['', '/watch?v=RXXEBNG6dgA&pp=ygUTaG93IHRvIGNyZWF0ZSBHYTJPMw%3D%3D', '/watch?v=6KNwG-dBPIw']"
+            formula_links: "['/watch?v=AW8OOp2undg', '/watch?v=RXXEBNG6dgA&pp=ygUTaG93IHRvIGNyZWF0ZSBHYTJPMw%3D%3D', '/watch?v=6KNwG-dBPIw']"
           },
           {
             name: "Germanium",
@@ -1055,7 +1046,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905073/elements/germanium.jpg",
             formulas: "['GeO2', 'GeH4O4', 'GeS2']",
             formulas_cid: "[90478414, 91868484, 24930]",
-            formula_links: "['/watch?v=9RyWjzSnaE0&pp=ygUSaG93IHRvIGNyZWF0ZSBHZU8y', '', '/watch?v=0Ap17zD1IZw&pp=ygUSaG93IHRvIGNyZWF0ZSBHZVMy']"
+            formula_links: "['/watch?v=9RyWjzSnaE0&pp=ygUSaG93IHRvIGNyZWF0ZSBHZU8y', '/watch?v=AW8OOp2undg', '/watch?v=0Ap17zD1IZw&pp=ygUSaG93IHRvIGNyZWF0ZSBHZVMy']"
           },
           {
             name: "Arsenic",
@@ -1175,7 +1166,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905162/elements/krypton.jpg",
             formulas: "['Kr', 'KrNe', 'KrNa']",
             formulas_cid: "[5416, 22719446, 71441271]",
-            formula_links: "['/watch?v=il4OOY7Zseg', '', '']"
+            formula_links: "['/watch?v=il4OOY7Zseg', '/watch?v=AW8OOp2undg', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Rubidium",
@@ -1205,7 +1196,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905171/elements/rubidium.jpg",
             formulas: "['RbCl', 'RbOH', 'Rb2SO4']",
             formulas_cid: "[62683, 62393, 197088]",
-            formula_links: "['/mfRQxMMar3M&pp=ygUSaG93IHRvIGNyZWF0ZSBSYkNs', '/watch?v=pZKRtU69Nag&pp=ygUSaG93IHRvIGNyZWF0ZSBSYk9I', '']"
+            formula_links: "['/mfRQxMMar3M&pp=ygUSaG93IHRvIGNyZWF0ZSBSYkNs', '/watch?v=pZKRtU69Nag&pp=ygUSaG93IHRvIGNyZWF0ZSBSYk9I', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Strontium",
@@ -1235,7 +1226,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905185/elements/strontium.jpg",
             formulas: "['Sr', 'SrO', ' Sr(NO3)2']",
             formulas_cid: "[5359327, 518709, 24848]",
-            formula_links: "['', '', '/watch?v=TE_1W7pCLh4']"
+            formula_links: "['/watch?v=AW8OOp2undg', '/watch?v=AW8OOp2undg', '/watch?v=TE_1W7pCLh4']"
           },
           {
             name: "Yttrium",
@@ -1265,7 +1256,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905202/elements/yttrium.jpg",
             formulas: "['Y2O3', 'YF3', 'YCl3']",
             formulas_cid: "[159374, 83679, 66318]",
-            formula_links: "['/watch?v=p6ADfcC7BYE&pp=ygUSaG93IHRvIGNyZWF0ZSBZMk8z', '/watch?v=zcaUowXfiHk&pp=ygURaG93IHRvIGNyZWF0ZSBZRjM%3D', '']"
+            formula_links: "['/watch?v=p6ADfcC7BYE&pp=ygUSaG93IHRvIGNyZWF0ZSBZMk8z', '/watch?v=zcaUowXfiHk&pp=ygURaG93IHRvIGNyZWF0ZSBZRjM%3D', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Zirconium",
@@ -1295,7 +1286,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905211/elements/zirconium.jpg",
             formulas: "['ZrO2', 'ZrC', 'ZrN']",
             formulas_cid: "[62395, 11159298, 94359]",
-            formula_links: "['/watch?v=bdTrdHdhaz8&pp=ygUSaG93IHRvIGNyZWF0ZSBack8y', '', '']"
+            formula_links: "['/watch?v=bdTrdHdhaz8&pp=ygUSaG93IHRvIGNyZWF0ZSBack8y', '/watch?v=AW8OOp2undg', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Niobium",
@@ -1325,7 +1316,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905238/elements/niobium-2.jpg",
             formulas: "['Nb2O5', 'NbC', 'NbN']",
             formulas_cid: "[123105, 159431, 90560]",
-            formula_links: "['/watch?v=3y1iHnpMSyw&pp=ygUTaG93IHRvIGNyZWF0ZSBOYjJPNQ%3D%3D', '', '']"
+            formula_links: "['/watch?v=3y1iHnpMSyw&pp=ygUTaG93IHRvIGNyZWF0ZSBOYjJPNQ%3D%3D', '/watch?v=AW8OOp2undg', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Molybdenum",
@@ -1355,7 +1346,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905254/elements/molybdenum.jpg",
             formulas: "['MoO3', 'MoS2', 'MoO2']",
             formulas_cid: "[14802, 14823, 29320]",
-            formula_links: "['/watch?v=X1ZtFT_pTQM&pp=ygUSaG93IHRvIGNyZWF0ZSBNb08z', '/watch?v=3Us5-NLarxE&pp=ygUSaG93IHRvIGNyZWF0ZSBNb1My', '']"
+            formula_links: "['/watch?v=X1ZtFT_pTQM&pp=ygUSaG93IHRvIGNyZWF0ZSBNb08z', '/watch?v=3Us5-NLarxE&pp=ygUSaG93IHRvIGNyZWF0ZSBNb1My', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Technetium",
@@ -1385,7 +1376,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905276/elements/technetium.jpg",
             formulas: "['Tc', 'Tc', 'Tc']",
             formulas_cid: "[23957, 26476, 9870092]",
-            formula_links: "['/watch?v=Hu42SH5iAps', '', '']"
+            formula_links: "['/watch?v=Hu42SH5iAps', '/watch?v=AW8OOp2undg', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Ruthenium",
@@ -1415,7 +1406,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905341/elements/ruthenium.jpg",
             formulas: "['Ru', 'CH4Ru', 'Cl2Ru']",
             formulas_cid: "[23950, 16218582, 150195]",
-            formula_links: "['/watch?v=kkqECgHcZZY', '', '']"
+            formula_links: "['/watch?v=kkqECgHcZZY', '/watch?v=AW8OOp2undg', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Rhodium",
@@ -1475,7 +1466,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905377/elements/palladium-2.jpg",
             formulas: "['ClHNaPd', 'PdCl2', 'PdO']",
             formulas_cid: "[6337730, 24290, 14831]",
-            formula_links: "['', '/watch?v=llfmZNbh0Z4&pp=ygUTaG93IHRvIGNyZWF0ZSBQZENsMg%3D%3D', '']"
+            formula_links: "['/watch?v=AW8OOp2undg', '/watch?v=llfmZNbh0Z4&pp=ygUTaG93IHRvIGNyZWF0ZSBQZENsMg%3D%3D', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Silver",
@@ -1535,7 +1526,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905419/elements/cadmium-2.jpg",
             formulas: "['CdO', 'CdS', 'CdSe']",
             formulas_cid: "[14782, 14783, 14784]",
-            formula_links: "['', '', '/watch?v=kDPyjDrpW3c&pp=ygUSaG93IHRvIGNyZWF0ZSBDZFNl']"
+            formula_links: "['/watch?v=AW8OOp2undg', '/watch?v=AW8OOp2undg', '/watch?v=kDPyjDrpW3c&pp=ygUSaG93IHRvIGNyZWF0ZSBDZFNl']"
           },
           {
             name: "Indium",
@@ -1565,7 +1556,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905580/elements/iridium-2.jpg",
             formulas: "['In2O3', 'In(OH)3', 'In2S3']",
             formulas_cid: "[57466798, 88636, 16685236]",
-            formula_links: "['/watch?v=wzNhGXpqFIc&pp=ugMICgJ2aRABGAHKBRNob3cgdG8gY3JlYXRlIEluMk8z', '', '']"
+            formula_links: "['/watch?v=wzNhGXpqFIc&pp=ugMICgJ2aRABGAHKBRNob3cgdG8gY3JlYXRlIEluMk8z', '/watch?v=AW8OOp2undg', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Tin",
@@ -1595,7 +1586,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905452/elements/tin-2.jpg",
             formulas: "['SnO2', 'SnCl2', 'SnBr4']",
             formulas_cid: "[29011, 24479, 24616]",
-            formula_links: "['/watch?v=tfAKIdKB9ws&pp=ygUSaG93IHRvIGNyZWF0ZSBTbk8y', '/watch?v=zziLOly2R8U&pp=ygUTaG93IHRvIGNyZWF0ZSBTbkNsMg%3D%3D', '']"
+            formula_links: "['/watch?v=tfAKIdKB9ws&pp=ygUSaG93IHRvIGNyZWF0ZSBTbk8y', '/watch?v=zziLOly2R8U&pp=ygUTaG93IHRvIGNyZWF0ZSBTbkNsMg%3D%3D', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Antimony",
@@ -1625,7 +1616,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905461/elements/antimony-2.jpg",
             formulas: "['Sb2O3', 'Sb2S3', 'SbF3']",
             formulas_cid: "[14794, 16685273, 24554]",
-            formula_links: "['/watch?v=OFHMp8RegT4&pp=ygUTaG93IHRvIGNyZWF0ZSBTYjJPMw%3D%3D', '/watch?v=wE_ebGPvyYE&pp=ygUTaG93IHRvIGNyZWF0ZSBTYjJTMw%3D%3D', '']"
+            formula_links: "['/watch?v=OFHMp8RegT4&pp=ygUTaG93IHRvIGNyZWF0ZSBTYjJPMw%3D%3D', '/watch?v=wE_ebGPvyYE&pp=ygUTaG93IHRvIGNyZWF0ZSBTYjJTMw%3D%3D', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Tellurium",
@@ -1655,7 +1646,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905473/elements/tellurium-2.jpg",
             formulas: "['H2TeO3', 'TeO2', 'C3H6Te']",
             formulas_cid: "[24936, 62638, 145282]",
-            formula_links: "['', '/watch?v=Nz-tF9-y8V8&pp=ygUSaG93IHRvIGNyZWF0ZSBUZU8y', '']"
+            formula_links: "['/watch?v=AW8OOp2undg', '/watch?v=Nz-tF9-y8V8&pp=ygUSaG93IHRvIGNyZWF0ZSBUZU8y', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Iodine",
@@ -1685,7 +1676,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905493/elements/iodine-2.jpg",
             formulas: "['I2', 'HI', 'HIO3']",
             formulas_cid: "[807, 24841, 24345]",
-            formula_links: "['', '', '/w_CciP1bOj8&pp=ygUSaG93IHRvIGNyZWF0ZSBISU8z']"
+            formula_links: "['/watch?v=AW8OOp2undg', '/watch?v=AW8OOp2undg', '/w_CciP1bOj8&pp=ygUSaG93IHRvIGNyZWF0ZSBISU8z']"
           },
           {
             name: "Xenon",
@@ -1715,7 +1706,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905502/elements/xenon-2.jpg",
             formulas: "['H2OXe', 'ClHXe', 'XeF6']",
             formulas_cid: "[23079648, 21967018, 139546]",
-            formula_links: "['', '', '/watch?v=EezTICN5cIk&pp=ygUSaG93IHRvIGNyZWF0ZSBYZUY2']"
+            formula_links: "['/watch?v=AW8OOp2undg', '/watch?v=AW8OOp2undg', '/watch?v=EezTICN5cIk&pp=ygUSaG93IHRvIGNyZWF0ZSBYZUY2']"
           },
           {
             name: "Cesium",
@@ -1805,7 +1796,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480906074/elements/lanthanum-2.jpg",
             formulas: "['LaCl₃', 'La(OH)₃', 'La₂O₃']",
             formulas_cid: "[64735, 135111, 150906]",
-            formula_links: "['/watch?v=hUdwRORGD1o&pp=ygUVaG93IHRvIGNyZWF0ZSBMYUNs4oKD', '/shorts/6dhakBG7V8M', '']"
+            formula_links: "['/watch?v=hUdwRORGD1o&pp=ygUVaG93IHRvIGNyZWF0ZSBMYUNs4oKD', '/shorts/6dhakBG7V8M', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Cerium",
@@ -1835,7 +1826,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480906083/elements/cerium-2.jpg",
             formulas: "['CeO2', 'CeCl3', 'Ce2(SO4)3']",
             formulas_cid: "[73963, 161282, 159674]",
-            formula_links: "['/watch?v=MsTAKknpm8s&pp=ygUSaG93IHRvIGNyZWF0ZSBDZU8y', '/watch?v=4LBe2VfW2CI&pp=ygUTaG93IHRvIGNyZWF0ZSBDZUNsMw%3D%3D', '']"
+            formula_links: "['/watch?v=MsTAKknpm8s&pp=ygUSaG93IHRvIGNyZWF0ZSBDZU8y', '/watch?v=4LBe2VfW2CI&pp=ygUTaG93IHRvIGNyZWF0ZSBDZUNsMw%3D%3D', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Praseodymium",
@@ -1865,7 +1856,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480906093/elements/praseodymium-2.jpg",
             formulas: "['Pr2O3', 'Pr6O11', 'PrF3']",
             formulas_cid: "[165911, 16211481, 83677]",
-            formula_links: "['', '/watch?v=RC9LHugGjW8&pp=ygUUaG93IHRvIGNyZWF0ZSBQcjZPMTE%3D', '/watch?v=vZYV4xCMrig&pp=ygUSaG93IHRvIGNyZWF0ZSBQckYz']"
+            formula_links: "['/watch?v=AW8OOp2undg', '/watch?v=RC9LHugGjW8&pp=ygUUaG93IHRvIGNyZWF0ZSBQcjZPMTE%3D', '/watch?v=vZYV4xCMrig&pp=ygUSaG93IHRvIGNyZWF0ZSBQckYz']"
           },
           {
             name: "Neodymium",
@@ -1895,7 +1886,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480906118/elements/neodymium-2.jpg",
             formulas: "['Nd2O3', 'NdCl3', 'Nd2O12S3']",
             formulas_cid: "[159373, 66204, 165814]",
-            formula_links: "['/watch?v=Py9RljZUP6Q&pp=ygUTaG93IHRvIGNyZWF0ZSBOZDJPMw%3D%3D', '/watch?v=hEy98-5D3Zo&pp=ygUTaG93IHRvIGNyZWF0ZSBOZENsMw%3D%3D', '']"
+            formula_links: "['/watch?v=Py9RljZUP6Q&pp=ygUTaG93IHRvIGNyZWF0ZSBOZDJPMw%3D%3D', '/watch?v=hEy98-5D3Zo&pp=ygUTaG93IHRvIGNyZWF0ZSBOZENsMw%3D%3D', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Promethium",
@@ -1923,8 +1914,8 @@
             story: "In 1902, Bohuslav Branner speculated that there should be an element in the periodic table between neodymium and samarium. He was not to know that all its isotopes were radioactive and had long disappeared. Attempts were made to discover it and several claims were made, but clearly all were false. However, minute amounts of promethium do occur in uranium ores as a result of nuclear fission, but in amounts of less than a microgram per million tonnes of ore. In 1939, the 60-inch cyclotron at the University of California was used to make promethium, but it was not proven. Finally element 61 was produced in 1945 by Jacob .A. Marinsky, Lawrence E. Glendenin, and Charles D. Coryell at Oak Ridge, Tennessee. They used ion-exchange chromatography to separate it from the fission products of uranium fuel taken from a nuclear reactor.",
             country: "USA",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480909602/elements/promethium.jpg",
-            formulas: "[]",
-            formulas_cid: "[]",
+            formulas: "['PmCl3', 'Pm2O3', 'Pm2(SO4)3']",
+            formulas_cid: "[14475784, ]",
             formula_links: "[]"
           },
           {
@@ -2013,9 +2004,9 @@
             story: "Gadolinium was discovered in 1880 by Charles Galissard de Marignac at Geneva. He had long suspected that the didymium reported by Carl Mosander was not a new element but a mixture. His suspicions were confirmed when Marc Delafontaine and Paul-Emile Lecoq de Boisbaudran at Paris reported that its spectral lines varied according to the source from which it came. Indeed, in 1879 they had already separated samarium from some didymium which had been extracted from the mineral samarskite, found in the Urals. In 1880, Marignac extracted yet another new rare earth from didymium, as did Paul-Émile Lecoq de Boisbaudran in 1886, and it was the latter who called it gadolinium.",
             country: "Switzerland",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480906202/elements/gadolinium-2.jpg",
-            formulas: "[]",
-            formulas_cid: "[]",
-            formula_links: "[]"
+            formulas: "['Gd2O3', 'Gd2O12S3', 'GdCl3']",
+            formulas_cid: "[159427, 166873, 61486]",
+            formula_links: "['/shorts/jgZpsBuAWO4?si=ESE1ygFGwK-biykI', '/watch?v=AW8OOp2undg', '/s1PrRUBP-sE?si=l0BDKPLMhGFDy1qz']"
           },
           {
             name: "Terbium",
@@ -2073,8 +2064,8 @@
             story: "Dysprosium was discovered in 1886 by Paul-Émile Lecoq de Boisbaudran in Paris. Its discovery came as a result of research into yttrium oxide, first made in 1794, and from which other rare earths (aka lanthanoids) were subsequently to be extracted, namely erbium in 1843, then holmium in 1878, and finally dysprosium. De Boisbaudran’s method had involved endless precipitations carried out on the marble slab of his fireplace at home. Pure samples of dysprosium were not available until Frank Spedding and co-workers at Iowa State University developed the technique of ion-exchange chromatography around 1950. From then on it was possible to separate the rare earth elements in a reliable and efficient manner, although that method of separation has now been superseded by liquid-liquid exchange technology.",
             country: "France",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480906225/elements/dysprosium.jpg",
-            formulas: "['Dy', 'Dy2O3', 'DyCl3']",
-            formulas_cid: "[23912, 159461]",
+            formulas: "['Dy', 'Dy2O3', 'DyN3O9']",
+            formulas_cid: "[23912, 159370, 25007]",
             formula_links: "['\"\"', '/watch?v=8IFsOmriS8I&pp=ygUTaG93IHRvIGNyZWF0ZSBEeTJPMw%3D%3D', '/watch?v=eHBBa2gMhzc&pp=ygUTaG93IHRvIGNyZWF0ZSBEeUNsMw%3D%3D']"
           },
           {
@@ -2103,9 +2094,9 @@
             story: "Holmium was discovered at Geneva in 1878 by Marc Delafontaine and Louis Soret, and independently by Per Teodor Cleve at Uppsala, Sweden. Both teams were investigating yttrium, which was contaminated with traces of other rare earths (aka lanthanoids) and had already yielded erbium which was later to yield ytterbium. Cleve looked more closely at what remained after the ytterbium had been removed, and realised it must contain yet other elements because he found that its atomic weight depended on its source. He separated holmium from erbium in 1878. Delafontaine and Soret also extracted it from the same source, having seen unexplained lines in the atomic spectrum. We cannot be certain that either group had produced a pure sample of the new element because yet another rare-earth, dysprosium, was to be extracted from holmium.",
             country: "Sweden",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480906237/elements/holmium-2.jpg",
-            formulas: "['Ho2O3', 'HoF3', 'HoCl3']",
-            formulas_cid: "[]",
-            formula_links: "['/watch?v=Uqvq6rPazBc&pp=ygUTaG93IHRvIGNyZWF0ZSBIbzJPMw%3D%3D', '\"\"', '\"\"']"
+            formulas: "['Ho2O3', 'HoN', 'HoCl3']",
+            formulas_cid: "[159423, 82818, 24992]",
+            formula_links: "['/watch?v=Uqvq6rPazBc&pp=ygUTaG93IHRvIGNyZWF0ZSBIbzJPMw%3D%3D', '\"\"', '/oQLhQWOgm24?si=c0F08pQEK9IMqfIE']"
           },
           {
             name: "Erbium",
@@ -2165,7 +2156,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480906271/elements/thulium-2.jpg",
             formulas: "['Tm2O3', 'TmCl3', 'TmF3']",
             formulas_cid: "[166838, 22154012, 23938]",
-            formula_links: "['\"\"', '\"\"', '\"\"']"
+            formula_links: "['/_zDo1xe-SYE?si=TD2zMbM8xXcLQ7IG', '\"\"', '\"\"']"
           },
           {
             name: "Ytterbium",
@@ -2285,7 +2276,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905541/elements/tantalum-2.jpg",
             formulas: "['Ta2O5', 'TaC', 'TaN']",
             formulas_cid: "[104214, 24065, 5969]",
-            formula_links: "['/XA3xFWVJsbI&pp=ygUTaG93IHRvIGNyZWF0ZSBUYTJPNQ%3D%3D', '\"\"', '\"\"']"
+            formula_links: "['/XA3xFWVJsbI&pp=ygUTaG93IHRvIGNyZWF0ZSBUYTJPNQ%3D%3D', '\"\"', '/RjVrFE4V1L4?si=EKFqeD6tc_CfnNKI']"
           },
           {
             name: "Tungsten",
@@ -2313,9 +2304,9 @@
             story: "More than 350 years ago, porcelain makers in China incorporated a unique peach colour into their designs by means of a tungsten pigment that was not known in the West. Indeed it was not for another century that chemists in Europe became aware of it. In 1779, Peter Woulfe examined a mineral from Sweden and concluded it contained a new metal, but he did not separate it. Then in 1781, Wilhelm Scheele investigated it and succeeded in isolating an acidic white oxide and which he rightly deduced was the oxide of a new metal. The credit for discovering tungsten goes to the brothers, Juan and Fausto Elhuyar, who were interested in mineralogy and were based at the Seminary at Vergara, in Spain, 1783 they produced the same acidic metal oxide and even reduced it to tungsten metal by heating with carbon.",
             country: "Spain",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905548/elements/tungsten-rod-2.jpg",
-            formulas: "['W', 'WC', 'W2C']",
-            formulas_cid: "[23964, 19762195, 73254831]",
-            formula_links: "['\"\"', '/watch?v=vAhzUqYpL3Q&pp=ygUQaG93IHRvIGNyZWF0ZSBXQw%3D%3D', '\"\"']"
+            formulas: "['W', 'WC', 'WB']",
+            formulas_cid: "[23964, 19762195, 82793]",
+            formula_links: "['/6XxcVg2Dfck?si=ICKSSaOXXAhYfAhq', '/watch?v=vAhzUqYpL3Q&pp=ygUQaG93IHRvIGNyZWF0ZSBXQw%3D%3D', '\"\"']"
           },
           {
             name: "Rhenium",
@@ -2373,9 +2364,9 @@
             story: "In 1803, Smithson Tennant added platinum to dilute aqua regia, which is a mixture of nitric and hydrochloric acids, and observed that not all the metal went into solution. Earlier experimenters had assumed that the residue was graphite, but he suspected it was something else, and he began to investigate it. By a combination of acid and alkali treatments he eventually separated it into two new metal elements, which he named iridium and osmium, naming the latter on account of the strong odour it gave off. Its name is derived from osme the Greek word for smell. Although it was recognised as a new metal, little use was made of it because it was rare and difficult to work with, although it was extremely hard wearing and for several years it was used for pen nibs and gramophone needles.",
             country: "UK",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905571/elements/osmium-2.jpg",
-            formulas: "[]",
-            formulas_cid: "[]",
-            formula_links: "[]"
+            formulas: "['OsO4', 'OsCl3', 'Os']",
+            formulas_cid: "[30318, 83468, 23937]",
+            formula_links: "['/watch?v=AW8OOp2undg', '/watch?v=AW8OOp2undg', '/AdX-T2Vv68Y?si=jbbDOTxjotLyJYBT']"
           },
           {
             name: "Iridium",
@@ -2495,7 +2486,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480909981/elements/mercury.jpg",
             formulas: "['HgO', 'HgS', 'HgCl2']",
             formulas_cid: "[18318, 44517647, 24085]",
-            formula_links: "['\"\"', '/watch?v=EB3WV3tuFEI&pp=ygURaG93IHRvIGNyZWF0ZSBIZ1M%3D', '/watch?v=1CPwmXnihkk&pp=ygUTaG93IHRvIGNyZWF0ZSBIZ0NsMg%3D%3D']"
+            formula_links: "['/_Y1alDuXm6A?si=M_9XUkO3QXByJjMG', '/watch?v=EB3WV3tuFEI&pp=ygURaG93IHRvIGNyZWF0ZSBIZ1M%3D', '/watch?v=1CPwmXnihkk&pp=ygUTaG93IHRvIGNyZWF0ZSBIZ0NsMg%3D%3D']"
           },
           {
             name: "Thallium",
@@ -2523,9 +2514,9 @@
             story: "The discovery of thallium was controversial. William Crookes of the Royal College of Science in London was the first to observe a green line in the spectrum of some impure sulfuric acid, and realised that it meant a new element. He announced his discovery in March 1861 in Chemical News. However, he did very little research into it. Meanwhile, in 1862, Claude-August Lamy of Lille, France, began to research thallium more thoroughly and even cast a small ingot of the metal itself. The French Academy now credited him its discovery. He sent the ingot to the London International Exhibition of 1862, where it was acclaimed as a new metal and he was awarded a medal. Crookes was furious and so the exhibition committee awarded him a medal as well.",
             country: "UK",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905616/elements/thallium-2.jpg",
-            formulas: "[]",
-            formulas_cid: "[]",
-            formula_links: "[]"
+            formulas: "['TlCl', 'Tl2CO3', 'Tl(NO3)3']",
+            formulas_cid: "[24642, 23031, 159690]",
+            formula_links: "['/Pcad40eZyg8?si=J22DbQS9gqeFpBzQ', '/watch?v=AW8OOp2undg', '/17IbD0MHXik?si=LToyKQaZly7iUTdl']"
           },
           {
             name: "Lead",
@@ -2555,7 +2546,7 @@
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905633/elements/lead.jpg",
             formulas: "['PbO', 'PbO2', 'Pb(NO3)2']",
             formulas_cid: "[5794, 14827, 16683880]",
-            formula_links: "['/watch?v=KeDV3zmowwM&pp=ygURaG93IHRvIGNyZWF0ZSBQYk8%3D', '/watch?v=n9ADhpa9zSo&pp=ygUSaG93IHRvIGNyZWF0ZSBQYk8y', '\"\"']"
+            formula_links: "['/watch?v=KeDV3zmowwM&pp=ygURaG93IHRvIGNyZWF0ZSBQYk8%3D', '/watch?v=n9ADhpa9zSo&pp=ygUSaG93IHRvIGNyZWF0ZSBQYk8y', '/aaVAwwG1778?si=LkVlDsLHBKQT1P_8']"
           },
           {
             name: "Bismuth",
@@ -2583,9 +2574,9 @@
             story: "Bismuth was discovered by an unknown alchemist around 1400 AD. Later that century it was alloyed with lead to make cast type for printers and decorated caskets were being crafted in the metal. Bismuth was often confused with lead; it was likewise a heavy metal and melted at a relatively low temperature making it easy to work. Georgius Agricola in the early 1500s speculated that it was a distinctly different metal, as did Caspar Neuman in the early 1700s, but proof that it was so finally came in 1753 thanks to the work of Claude-François Geoffre. Bismuth was used as an alloying metal in the bronze of the Incas of South America around 1500 AD. Bismuth was not mined as ore but appears to have occurred as the native metal.",
             country: "ancient",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905670/elements/bismuth.jpg",
-            formulas: "[]",
-            formulas_cid: "[]",
-            formula_links: "[]"
+            formulas: "['Bi2O12S3', 'Bi2O3', 'BiN3O9']",
+            formulas_cid: "[198144, , 107711]",
+            formula_links: "['/watch?v=AW8OOp2undg', '/4dY5eZ27fsY?si=gYUcOqsempJ1bR4E', '/shorts/5fTGTQAPtXo?si=miLY0NZYUQbBlTQI']"
           },
           {
             name: "Polonium",
@@ -2613,9 +2604,9 @@
             story: "Uranium ores contain minute traces of polonium at levels of parts per billion. Despite this, in 1898 Marie Curie and husband Pierre Curie extracted some from pitchblende (uranium oxide, U3O8) after months of painstaking work. The existence of this element had been forecast by the Mendeleev who could see from his periodic table that there might well be the element that followed bismuth and he predicted it would have an atomic weight of 212. The Curies had extracted the isotope polonium-209 and which has a half-life of 103 years. Before the advent of nuclear reactors, the only source of polonium was uranium ore but that did not prevent its being separated and used in anti-static devices. These relied on the alpha particles that polonium emits to neutralise electric charge.",
             country: "France",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905692/elements/polonium.jpg",
-            formulas: "['[Xe] 4f14 5d10 6s2 6p4', 'PoO2', 'PoCl2']",
-            formulas_cid: "['Failed to retrieve data', 16745749, 22445]",
-            formula_links: "['\"\"', '/watch?v=iiR2IN5_Br4&pp=ygUSaG93IHRvIGNyZWF0ZSBQb08y', '\"\"']"
+            formulas: "['Po', 'PoO2', 'PoCl2']",
+            formulas_cid: "['6328143', 16745749, 22445]",
+            formula_links: "['/bbr5yWwsI1o?si=uJhHcpWHqsIxERGJ', '/watch?v=iiR2IN5_Br4&pp=ygUSaG93IHRvIGNyZWF0ZSBQb08y', '\"\"']"
           },
           {
             name: "Astatine",
@@ -2644,8 +2635,8 @@
             country: "USA",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905845/elements/astatine-300x225.jpg",
             formulas: "['At2', 'AtCl', 'AtH']",
-            formulas_cid: "[104931, 5459963, 'Failed to retrieve data']",
-            formula_links: "['\"\"', '\"\"', '\"\"']"
+            formulas_cid: "[104931, 5459963, '/watch?v=AW8OOp2undg']",
+            formula_links: "['/GP8jJgzEmwE?si=THLobHg4Jq-8xeN-', '\"\"', '\"\"']"
           },
           {
             name: "Radon",
@@ -2673,9 +2664,9 @@
             story: "In 1899, Ernest Rutherford and Robert B. Owens detected a radioactive gas being released by thorium. That same year, Pierre and Marie Curie detected a radioactive gas emanating from radium. In1900, Friedrich Ernst Dorn at Halle, Germany, noted that a gas was accumulating inside ampoules of radium. They were observing radon. That from radium was the longer-lived isotope radon-222 which has a half-life 3.8 days, and was the same isotope which the Curies has observed. The radon that Rutherford detected was radon-220 with a half-life of 56 seconds. In 1900, Rutherford devoted himself to investigating the new gas and showed that it was possible to condense it to a liquid. In 1908, William Ramsay and Robert Whytlaw-Gray at University College, London, collected enough radon to determine its properties and reported that it was the heaviest gas known.",
             country: "Germany",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905721/elements/radon.jpg",
-            formulas: "[]",
-            formulas_cid: "[]",
-            formula_links: "[]"
+            formulas: "['Rn', '/watch?v=AW8OOp2undg', '/watch?v=AW8OOp2undg']",
+            formulas_cid: "[24857, ,]",
+            formula_links: "['/mTuC_LrEfbU?si=sEJsE8Sicx55YbKR', '/watch?v=AW8OOp2undg', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Francium",
@@ -2703,9 +2694,9 @@
             story: "Mendeleev said there should be an element like caesium waiting to be discovered. Consequently, there were claims, denials, and counterclaims by scientists who said they had found it. During the 1920s and 30s, these claims were made on the basis of unexplained radioactivity in minerals, or new lines in their X-ray spectra, but all eventually turned out not to be evidence of element 87. Francium was finally discovered in 1939 by Marguerite Perey at the Curie Institute in Paris. She had purified a sample of actinium free of all its known radioactive impurities and yet its radioactivity still indicated another element was present, and which she rightly deduced was the missing element 87. Others challenged her results too, and it was not until after World War II that she was accepted as the rightful discoverer in 1946.",
             country: "France",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905808/elements/francium.jpg",
-            formulas: "[]",
-            formulas_cid: "[]",
-            formula_links: "[]"
+            formulas: "['Fr', '/watch?v=AW8OOp2undg', '/watch?v=AW8OOp2undg']",
+            formulas_cid: "[6328145, ,]",
+            formula_links: "['/hpYxllgfMSg?si=a2yPcuEIhiiuCEzO', '/watch?v=AW8OOp2undg', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Radium",
@@ -2733,9 +2724,9 @@
             story: "Radium was discovered in 1898 by Marie Curie and Pierre Curie. They managed to extract 1 mg of radium from ten tonnes of the uranium ore pitchblende (uranium oxide, U3O8), a considerable feat, given the chemically methods of separation available to them. They identified that it was a new element because its atomic spectrum revealed new lines. Their samples glowed with a faint blue light in the dark, caused by the intense radioactivity exciting the surrounding air. The metal itself was isolated by Marie Curie and André Debierne in 1911, by means of the electrolysis of radium chloride. At Debierne’s suggestion, they used a mercury cathode in which the liberated radium dissolved. This was then heated to distil off the mercury leaving the radium behind.",
             country: "France",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480905917/elements/radium-glow.jpg",
-            formulas: "[]",
-            formulas_cid: "[]",
-            formula_links: "[]"
+            formulas: "['Ra', '/watch?v=AW8OOp2undg', '/watch?v=AW8OOp2undg']",
+            formulas_cid: "[6328144, ,]",
+            formula_links: "['/I_1XelLa1eo?si=DwwIz4WVPex7Ew5Q', '/watch?v=AW8OOp2undg', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Actinium",
@@ -2763,9 +2754,9 @@
             story: "This element was discovered in 1899 by André Debierne at Paris. He extracted it from the uranium ore pitchblende (uranium oxide, U3O8) in which it occurs in trace amounts. In 1902, Friedrich Otto Giesel independently extracted it from the same mineral and, unaware it was already known, gave it the named emanium. Actinium extracted from uranium ores is the isotope actinium-227 which has half-life of 21.7 years. It occurs naturally as one of the sequence of isotopes that originate with the radioactive decay of uranium-235. A tonne of pitchblende contains around 150 mg of actinium.",
             country: "France",
             image: "http://res.cloudinary.com/dc2o3efbz/image/upload/v1480906342/elements/actinium.jpg",
-            formulas: "['C2H3O2-', 'C2H4O2', 'C2H3NaO2']",
-            formulas_cid: "['Failed to retrieve data', 176, 517045]",
-            formula_links: "['/watch?v=TvOJSZLqcgY&pp=ygUVaG93IHRvIGNyZWF0ZSBDMkgzTzIt', '\"\"', '/watch?v=lGm9eGny7QM']"
+            formulas: "['Ac', 'AcN3O9', '/watch?v=AW8OOp2undg']",
+            formulas_cid: "[23965, 162623744, ]",
+            formula_links: "['/rKm0ShaJNFM?si=gIkSznzt9NreDbwv', '/watch?v=AW8OOp2undg', '/watch?v=AW8OOp2undg']"
           },
           {
             name: "Thorium",
@@ -3662,7 +3653,16 @@
           const videoList = JSON.parse(stringList);
           
           return videoList
-      }
+        }
+        
+        function formatChemicalFormulas() {
+          var elements = document.querySelectorAll('span[id^="element_cp"]');
+          elements.forEach(function(element) {
+            var formula = element.textContent;
+            var formattedFormula = formula.replace(/(\d+)/g, '<sub>$1</sub>');
+            element.innerHTML = formattedFormula;
+          });
+        }
       </script>
 
       <script>
@@ -3739,8 +3739,8 @@
             }
             catch (error){
               console.log(error)
-            }     
-            formatChemicalFormulas();                   
+            }
+            formatChemicalFormulas()                        
         }
       </script>
       </div> <!-- END site-content -->
