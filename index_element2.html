@@ -3655,13 +3655,42 @@
           return videoList
         }
         
-        function formatChemicalFormulas() {
+        function formatChemicalFormulas() 
+        {
           var elements = document.querySelectorAll('span[id^="element_cp"]');
           elements.forEach(function(element) {
             var formula = element.textContent;
             var formattedFormula = formula.replace(/(\d+)/g, '<sub>$1</sub>');
             element.innerHTML = formattedFormula;
           });
+        }
+
+        function formatChemicalFormulasInTale() {
+          var storyElement = document.getElementById('element_story');
+          var sourceElement = document.getElementById('element_source');
+          var usageElement = document.getElementById('element_usage');
+          if (!storyElement || !sourceElement || !usageElement) {
+            console.error("Story element not found.");
+            return;
+          }
+
+          // Regular expression to match chemical formulas
+          const chemicalFormulaRegex = /([A-Z][a-z]?)(\d+)/g;
+
+          var formattedStory1 = storyElement.textContent.replace(chemicalFormulaRegex, function(match, p1, p2) {
+            return p1 + '<sub>' + p2 + '</sub>';
+          });
+          var formattedStory2 = sourceElement.textContent.replace(chemicalFormulaRegex, function(match, p1, p2) {
+            return p1 + '<sub>' + p2 + '</sub>';
+          });
+          var formattedStory3 = usageElement.textContent.replace(chemicalFormulaRegex, function(match, p1, p2) {
+            return p1 + '<sub>' + p2 + '</sub>';
+          });
+
+          // Update the story content
+          storyElement.innerHTML = formattedStory1;
+          sourceElement.innerHTML = formattedStory2;
+          usageElement.innerHTML = formattedStory3;
         }
       </script>
 
@@ -3740,6 +3769,7 @@
             catch (error){
               console.log(error)
             }
+            formatChemicalFormulasInTale();
             formatChemicalFormulas()                        
         }
       </script>
